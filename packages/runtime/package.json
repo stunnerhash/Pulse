@@ -1,0 +1,27 @@
+{
+  "name": "koala",
+  "version": "1.0.0",
+  "description": "Koala.js is a tiny frontend framework that explores core ideas behind modern UI libraries – simple, focused, and hackable",
+  "keywords": [],
+  "main": "dist/koala.js",
+  "files": [
+    "dist/koala.js"
+  ],
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "prepack": "npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "jsdom": "^22.1.0",
+    "rollup": "^3.28.1",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "rollup-plugin-filesize": "^10.0.0",
+    "vitest": "^0.34.3"
+  }
+}
