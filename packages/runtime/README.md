@@ -2,6 +2,8 @@
 
 **Pulse** is a tiny frontend framework built from the ground up for modern UI development — like React, but smaller, simpler, and hackable. It runs directly in the browser using native ESM — no bundlers or compilers required.
 
+---
+
 ## 🚀 Features
 
 - ✅ Native ESM (no bundler needed)
@@ -10,7 +12,28 @@
 - 💡 Works with plain JS + Tailwind CDN
 - 🛠️ Designed to be hackable and minimal
 
-## ✨ Getting Started
+---
+
+## ⚡️ Zero Config Starter
+
+The easiest way to start building with Pulse — no bundlers, no setup, just code:
+
+```bash
+npx create-pulse my-app
+```
+
+This scaffolds a ready-to-use project with:
+
+- Tailwind via CDN  
+- Import maps preconfigured  
+- Native ESM out of the box  
+- A functional counter app
+
+---
+
+## ✨ Advanced Usage
+
+Want to manually set it up or integrate into your own project?
 
 ```bash
 npm install pulsekit
@@ -28,7 +51,7 @@ Use it directly in the browser with an import map:
 </script>
 ```
 
-Then import it in your `main.js`:
+Then import and render your app:
 
 ```js
 import { createApp, h, hString, hFragment } from 'pulse'
@@ -41,7 +64,7 @@ const reducers = {
 
 function View(state, emit) {
   return hFragment([
-    h('h1', {}, [hString(\`Count: \${state.count}\`)]),
+    h('h1', {}, [hString(`Count: ${state.count}`)]),
     h('button', { on: { click: () => emit('add') } }, [hString('+')]),
     h('button', { on: { click: () => emit('sub') } }, [hString('−')]),
   ])
@@ -50,21 +73,15 @@ function View(state, emit) {
 createApp({ state, reducers, view: View }).mount(document.getElementById('app'))
 ```
 
-## 🧪 Zero Config Starter
-
-Want a ready-made boilerplate with Tailwind and everything set up?
-
-```bash
-npx create-pulse my-app
-cd my-app
-npm run start
-```
+---
 
 ## 📦 Package Info
 
 - **Package:** [`pulsekit`](https://www.npmjs.com/package/pulsekit)
 - **CLI Tool:** [`create-pulse`](https://www.npmjs.com/package/create-pulse)
 - **GitHub:** [stunnerhash/pulse](https://github.com/stunnerhash/pulse)
+
+---
 
 ## 🧠 Philosophy
 
@@ -75,6 +92,8 @@ Pulse is built for developers who love:
 - Using modern browser features directly
 
 If you enjoy learning how frameworks work under the hood, Pulse is for you.
+
+---
 
 ## 📄 License
 
