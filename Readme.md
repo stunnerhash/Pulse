@@ -22,7 +22,7 @@ This monorepo is organized as follows:
 
 | Folder         | Description                                     |
 |----------------|-------------------------------------------------|
-| `packages/pulsekit` | The core Pulse framework (`pulsekit`)          |
+| `packages/runtime` | The core Pulse framework (`pulsekit`)          |
 | `packages/cli`      | CLI tool (`create-pulse`) to create new projects |
 | `examples/`         | Example apps built with Pulse                   |
 
@@ -34,5 +34,3 @@ You can create a new project using the CLI:
 
 ```bash
 npx create-pulse my-app
-cd my-app
-npm run start
