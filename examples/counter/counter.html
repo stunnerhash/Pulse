@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PulseKit Counter</title>
+
+        <!-- Tailwind CSS CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6366f1',
+                        accent: '#e11d48',
+                        glass: 'rgba(255, 255, 255, 0.15)',
+                    },
+                },
+            },
+        };
+        </script>
+    </head>
+    <body class="bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 min-h-screen flex flex-col justify-center items-center text-gray-100 font-sans">
+
+        <!-- App mounts here -->
+        <div id="app" class="flex-grow flex items-center justify-center w-full px-4"></div>
+
+        <!-- Footer -->
+        <footer class="w-full text-center text-white/70 text-sm py-4">
+            Made with
+            <span class="text-white font-semibold">my own frontend framework</span>
+            —
+            <a
+                href="https://github.com/your-username/pulsekit"
+                target="_blank"
+                class="underline hover:text-white transition"
+            >GitHub</a>
+            |
+            <a
+                href="https://www.npmjs.com/package/pulsekit"
+                target="_blank"
+                class="underline hover:text-white transition"
+            >
+                NPM
+            </a>
+        </footer>
+
+        <script type="module">
+        import {
+            createApp,
+            h,
+            hString,
+            hFragment,
+        } from 'https://unpkg.com/pulsekit@0.0.1'
+
+        const state = { count: 0 }
+
+        const reducers = {
+            add: (state) => ({ count: state.count + 1 }),
+            sub: (state) => ({ count: state.count - 1 }),
+        }
+
+        function View(state, emit) {
+            return hFragment([
+                h('div', {
+                    class:
+                    'backdrop-blur-md bg-glass border border-white/20 shadow-2xl rounded-3xl p-10 w-full max-w-md text-center',
+                }, [
+                        h('h1', {
+                            class: 'text-3xl font-bold mb-6 tracking-tight',
+                        }, [hString('Counter')]),
+
+                        h('div', {
+                            class: 'flex justify-center items-center gap-8 mb-6',
+                        }, [
+                                h('button', {
+                                    class:
+                                    'bg-white/20 border border-white/30 w-14 h-14 text-3xl rounded-full hover:bg-white/30 transition-all active:scale-90',
+                                    on: { click: () => emit('sub') },
+                                }, [hString('−')]),
+
+                                h('span', {
+                                    class: `text-5xl font-extrabold tracking-tight ${
+state.count < 0 ? 'text-accent' : 'text-white'
+} transition-all`,
+                                }, [hString(state.count)]),
+
+                                h('button', {
+                                    class:
+                                    'bg-white/20 border border-white/30 w-14 h-14 text-3xl rounded-full hover:bg-white/30 transition-all active:scale-90',
+                                    on: { click: () => emit('add') },
+                                }, [hString('+')]),
+                            ]),
+
+                        h('p', {
+                            class: 'text-sm text-white/70',
+                        }, [hString('Try clicking the buttons!')])
+                    ])
+            ])
+        }
+
+        createApp({ state, view: View, reducers }).mount(document.getElementById('app'))
+        </script>
+    </body>
+</html>

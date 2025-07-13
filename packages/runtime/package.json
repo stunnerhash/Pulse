@@ -3,9 +3,15 @@
     "version": "0.0.1",
     "description": "Meet Pulse: your go-to tiny frontend framework. It's built from the ground up for modern UI development, offering everything you need, much like React. Expect a focus on clean simplicity, solid performance, and incredible hackability.",
     "keywords": [],
+    "type": "module",
     "main": "dist/pulse.js",
+    "exports": {
+        ".": {
+            "import": "./dist/pulse.js"
+        }
+    },
     "files": [
-        "dist/pulse.js"
+        "dist"
     ],
     "scripts": {
         "build": "rollup -c",
