@@ -1,8 +1,7 @@
 {
     "name": "pulse",
     "private": true,
-    "version": "0.0.1",
-    "private": true,
+    "version": "0.0.2",
     "description": "Pulse is a tiny frontend framework that explores core ideas behind modern UI libraries – simple, focused, and hackable.",
     "workspaces": [
         "packages/compiler",
