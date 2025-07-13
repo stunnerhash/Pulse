@@ -1,16 +1,17 @@
 {
-  "name": "koala",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Koala.js is a tiny frontend framework that explores core ideas behind modern UI libraries – simple, focused, and hackable.",
-  "workspaces": [
-    "packages/compiler",
-    "packages/loader",
-    "packages/runtime"
-  ],
-  "scripts": {
-    "serve:examples": "npx http-server . -o ./examples/ -bg"
-  },
-  "keywords": [],
-  "license": "MIT"
+    "name": "pulse",
+    "private": true,
+    "version": "0.0.1",
+    "private": true,
+    "description": "Pulse.js is a tiny frontend framework that explores core ideas behind modern UI libraries – simple, focused, and hackable.",
+    "workspaces": [
+        "packages/compiler",
+        "packages/loader",
+        "packages/runtime"
+    ],
+    "scripts": {
+        "serve:examples": "npx http-server . -o ./examples/ -bg"
+    },
+    "keywords": [],
+    "license": "MIT"
 }

@@ -6,7 +6,7 @@ export default {
   plugins: [cleanup()],
   output: [
     {
-      file: 'dist/koala.js',
+      file: 'dist/pulse.js',
       format: 'esm',
       plugins: [filesize()],
     },

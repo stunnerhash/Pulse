@@ -1,11 +1,11 @@
 {
-  "name": "koala-compiler",
-  "version": "1.0.0",
-  "description": "Compiler for Koala.js",
+  "name": "pulse-compiler",
+  "version": "0.0.1",
+  "description": "Compiler for pulse.js",
   "keywords": [],
-  "main": "dist/koala.js",
+  "main": "dist/pulse.js",
   "files": [
-    "dist/koala.js"
+    "dist/pulse.js"
   ],
   "scripts": {
     "build": "rollup -c",

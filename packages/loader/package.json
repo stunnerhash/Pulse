@@ -1,11 +1,11 @@
 {
-  "name": "koala-loader",
-  "version": "1.0.0",
-  "description": "Loader for Koala.js",
+  "name": "pulse-loader",
+  "version": "0.0.1",
+  "description": "Loader for pulse.js",
   "keywords": [],
-  "main": "dist/koala.js",
+  "main": "dist/pulse.js",
   "files": [
-    "dist/koala.js"
+    "dist/pulse.js"
   ],
   "scripts": {
     "build": "rollup -c",

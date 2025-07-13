@@ -1,4 +1,4 @@
-# koala-compiler
+# Pulse-compiler
 
 ## Commands
 

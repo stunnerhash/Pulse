@@ -17,7 +17,7 @@ export function destroyDOM(vdom){
             break;
         }
         default: {
-            throw new Error(`Can't destory DOM of type: ${type}`);
+            throw new Error(`Can't destroy DOM of type: ${type}`);
         }
     }
     delete vdom.el;
