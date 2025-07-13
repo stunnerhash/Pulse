@@ -1,7 +1,7 @@
 {
   "name": "pulse-compiler",
   "version": "0.0.1",
-  "description": "Compiler for pulse.js",
+  "description": "Compiler for Pulse",
   "keywords": [],
   "main": "dist/pulse.js",
   "files": [

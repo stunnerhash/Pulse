@@ -3,7 +3,7 @@
     "private": true,
     "version": "0.0.1",
     "private": true,
-    "description": "Pulse.js is a tiny frontend framework that explores core ideas behind modern UI libraries – simple, focused, and hackable.",
+    "description": "Pulse is a tiny frontend framework that explores core ideas behind modern UI libraries – simple, focused, and hackable.",
     "workspaces": [
         "packages/compiler",
         "packages/loader",

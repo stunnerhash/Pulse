@@ -1,7 +1,7 @@
 {
   "name": "pulse-loader",
   "version": "0.0.1",
-  "description": "Loader for pulse.js",
+  "description": "Loader for Pulse",
   "keywords": [],
   "main": "dist/pulse.js",
   "files": [

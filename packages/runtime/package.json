@@ -1,7 +1,7 @@
 {
     "name": "pulsekit",
     "version": "0.0.1",
-    "description": "Meet Pulse.js: your go-to tiny frontend framework. It's built from the ground up for modern UI development, offering everything you need, much like React. Expect a focus on clean simplicity, solid performance, and incredible hackability.",
+    "description": "Meet Pulse: your go-to tiny frontend framework. It's built from the ground up for modern UI development, offering everything you need, much like React. Expect a focus on clean simplicity, solid performance, and incredible hackability.",
     "keywords": [],
     "main": "dist/pulse.js",
     "files": [
