@@ -1,16 +1,14 @@
 {
     "name": "pulse",
     "private": true,
-    "version": "0.0.2",
-    "description": "Pulse is a tiny frontend framework that explores core ideas behind modern UI libraries – simple, focused, and hackable.",
+    "version": "0.0.1",
+    "description": "Pulse is a tiny frontend framework focused on simplicity, performance, and hackability.",
     "workspaces": [
+        "packages/runtime",
         "packages/compiler",
         "packages/loader",
-        "packages/runtime"
+        "packages/cli"
     ],
-    "scripts": {
-        "serve:examples": "npx http-server . -o ./examples/ -bg"
-    },
-    "keywords": [],
+    "keywords": ["frontend", "framework", "minimal", "esm", "pulse"],
     "license": "MIT"
 }

@@ -1,0 +1,34 @@
+{
+  "name": "create-pulse",
+  "version": "0.0.3",
+  "description": "Create a new Pulse app with zero config — includes Tailwind, native ESM, and a beautiful boilerplate.",
+  "type": "module",
+  "bin": {
+    "create-pulse": "index.js"
+  },
+  "keywords": [
+    "pulse",
+    "create-pulse",
+    "frontend",
+    "cli",
+    "scaffold",
+    "zero-config",
+    "starter",
+    "tailwind",
+    "esm",
+    "pulsekit"
+  ],
+  "author": "stunnerhash",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stunnerhash/pulse"
+  },
+  "homepage": "https://github.com/stunnerhash/pulse",
+  "bugs": {
+    "url": "https://github.com/stunnerhash/pulse/issues"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
