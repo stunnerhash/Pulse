@@ -1,11 +1,81 @@
 # Pulse
 
-## Commands
+**Pulse** is a tiny frontend framework built from the ground up for modern UI development — like React, but smaller, simpler, and hackable. It runs directly in the browser using native ESM — no bundlers or compilers required.
 
-This package has the following commands:
+## 🚀 Features
 
-- `npm run build` - Bundle the project into a single ESM file
-- `npm run lint` - Lint the project
-- `npm run lint:fix` - Lint the project and fix any issues
-- `npm run test [<test-path>]` - Start the test runner in watch mode
-- `npm run test:run [<test-path>]` - Run the tests once
+- ✅ Native ESM (no bundler needed)
+- 🎯 Component-based architecture
+- 🧠 Simple state + reducers system
+- 💡 Works with plain JS + Tailwind CDN
+- 🛠️ Designed to be hackable and minimal
+
+## ✨ Getting Started
+
+```bash
+npm install pulsekit
+```
+
+Use it directly in the browser with an import map:
+
+```html
+<script type="importmap">
+{
+  "imports": {
+    "pulse": "/node_modules/pulsekit/dist/pulse.js"
+  }
+}
+</script>
+```
+
+Then import it in your `main.js`:
+
+```js
+import { createApp, h, hString, hFragment } from 'pulse'
+
+const state = { count: 0 }
+const reducers = {
+  add: (state) => ({ count: state.count + 1 }),
+  sub: (state) => ({ count: state.count - 1 }),
+}
+
+function View(state, emit) {
+  return hFragment([
+    h('h1', {}, [hString(\`Count: \${state.count}\`)]),
+    h('button', { on: { click: () => emit('add') } }, [hString('+')]),
+    h('button', { on: { click: () => emit('sub') } }, [hString('−')]),
+  ])
+}
+
+createApp({ state, reducers, view: View }).mount(document.getElementById('app'))
+```
+
+## 🧪 Zero Config Starter
+
+Want a ready-made boilerplate with Tailwind and everything set up?
+
+```bash
+npx create-pulse my-app
+cd my-app
+npm run start
+```
+
+## 📦 Package Info
+
+- **Package:** [`pulsekit`](https://www.npmjs.com/package/pulsekit)
+- **CLI Tool:** [`create-pulse`](https://www.npmjs.com/package/create-pulse)
+- **GitHub:** [stunnerhash/pulse](https://github.com/stunnerhash/pulse)
+
+## 🧠 Philosophy
+
+Pulse is built for developers who love:
+
+- Reading and understanding the source
+- Hacking on small projects with no build steps
+- Using modern browser features directly
+
+If you enjoy learning how frameworks work under the hood, Pulse is for you.
+
+## 📄 License
+
+MIT © [stunnerhash](https://github.com/stunnerhash)
