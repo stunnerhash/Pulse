@@ -128,7 +128,7 @@ function View(state, emit) {
         h('strong', { class: 'text-white' }, [hString('Pulse')]),
         hString(' — '),
         h('a', {
-          href: 'https://github.com/your-username/pulsekit',
+          href: 'https://github.com/stunnerhash/pulsekit',
           class: 'underline hover:text-white',
           target: '_blank',
         }, [hString('GitHub')]),
