@@ -48,7 +48,7 @@ function View(state, emit) {
         h('strong', { class: 'text-white' }, [hString('Pulse')]),
         hString(' — '),
         h('a', {
-          href: 'https://github.com/stunnerhash/pulsekit',
+          href: 'https://github.com/stunnerhash/pulse',
           class: 'underline hover:text-white',
           target: '_blank',
         }, [hString('GitHub')]),

@@ -1,6 +1,6 @@
 {
   "name": "create-pulse",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Create a new Pulse app with zero config — includes Tailwind, native ESM, and a beautiful boilerplate.",
   "type": "module",
   "bin": {
