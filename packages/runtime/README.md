@@ -14,7 +14,7 @@
 
 ---
 
-## ⚡️ Zero Config Starter
+## ⚡️ Getting Started
 
 The easiest way to start building with Pulse — no bundlers, no setup, just code:
 

@@ -22,7 +22,7 @@ This monorepo is organized as follows:
 
 | Folder         | Description                                     |
 |----------------|-------------------------------------------------|
-| `packages/runtime` | The core Pulse framework (`pulsekit`)          |
+| `packages/runtime` | The core Pulse framework (`pulse`)          |
 | `packages/cli`      | CLI tool (`create-pulse`) to create new projects |
 | `examples/`         | Example apps built with Pulse                   |
 

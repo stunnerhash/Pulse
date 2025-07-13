@@ -1,6 +1,6 @@
 {
     "name": "pulsekit",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "Pulse is a tiny frontend framework built for the modern web — minimal, fast, and hackable. Inspired by React, but made for native ESM and zero-config development.",
     "keywords": [
         "pulse",

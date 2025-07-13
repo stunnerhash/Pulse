@@ -41,7 +41,7 @@ fs.writeFileSync(
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>PulseKit App</title>
+    <title>Pulse App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Tailwind CSS -->
@@ -151,5 +151,5 @@ console.log('📦 Installing dependencies...')
 execSync('npm install', { stdio: 'inherit' })
 
 // Step 6: Auto run server
-console.log(`\n✅ PulseKit app created in '${projectName}'!`) 
+console.log(`\n✅ Puse app created in '${projectName}'!`) 
 execSync('npm run start', { stdio: 'inherit' })
