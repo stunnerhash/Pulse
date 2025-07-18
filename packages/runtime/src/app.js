@@ -1,6 +1,7 @@
 import { destroyDOM } from "./destroy-dom";
 import { Dispatcher } from "./dispatcher";
 import { mountDOM } from "./mount-dom";
+import { patchDOM } from "./patch-dom";
 
 export function createApp({ state, view, reducers }){
     let parentEl = null;
@@ -22,16 +23,15 @@ export function createApp({ state, view, reducers }){
 
     
     function renderApp(){
-        if(vdom){
-            destroyDOM(vdom);
-        }
-        vdom = view(state, emit);
-        mountDOM(vdom, parentEl);
+        const newVdom = view(state, emit);
+        vdom = patchDOM(vdom, newVdom, parentEl);
     }
+
     return {
         mount(_parentEl){
             parentEl = _parentEl;
-            renderApp()
+            vdom = view(state, emit);
+            mountDOM(vdom, parentEl);
         },
         unmount(){
             destroyDOM(vdom);

@@ -40,7 +40,7 @@ npx create-pulse my-app --template=todos
 
 | Template   | Description               |
 |------------|----------------------------|
-| `default`  | Minimal Hello World        |
+| `default`  | Classic counter app        |
 | `counter`  | Classic counter app        |
 | `todos`    | Clean interactive todo app |
 
